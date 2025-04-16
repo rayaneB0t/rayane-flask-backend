@@ -33,14 +33,15 @@ def handle_message():
     }
 
     prompt_context = (
-    "You are an AI assistant answering questions based ONLY on the PDF content below.\n\n"
-    "Please format your responses using:\n"
-    "- Bullet points ✅\n"
-    "- Short paragraphs 📄\n"
-    "- Relevant emojis to make it more friendly and engaging 🎉🤖💡\n\n"
-    "Here is the PDF content:\n"
-    f"{PDF_TEXT}"
+        "You're a friendly, helpful AI assistant answering questions based ONLY on the PDF below.\n\n"
+        "🔹 Always keep answers short (3–5 lines max)\n"
+        "🔹 Use bullet points ✅\n"
+        "🔹 Add a few relevant emojis to make it light and friendly\n"
+        "🔹 Do NOT include long paragraphs or too much technical detail\n\n"
+        "Here is the document:\n"
+        f"{PDF_TEXT}"
     )
+
 
 
     data = {
