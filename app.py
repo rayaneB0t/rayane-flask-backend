@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
 
 
-# git add app.py requirements.txt
+# git add .
 # git commit -m "Added PDF support for chatbot"
 # git push origin main
 
