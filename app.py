@@ -33,10 +33,15 @@ def handle_message():
     }
 
     prompt_context = (
-        "You are an AI assistant answering questions based on this document:\n\n"
-        f"{PDF_TEXT}\n\n"
-        "Only respond based on the content of the PDF."
+    "You are an AI assistant answering questions based ONLY on the PDF content below.\n\n"
+    "Please format your responses using:\n"
+    "- Bullet points ✅\n"
+    "- Short paragraphs 📄\n"
+    "- Relevant emojis to make it more friendly and engaging 🎉🤖💡\n\n"
+    "Here is the PDF content:\n"
+    f"{PDF_TEXT}"
     )
+
 
     data = {
         "model": "gpt-4",
